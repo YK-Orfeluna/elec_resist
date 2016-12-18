@@ -6,6 +6,7 @@ def teikou(V1, V2, mA) :
 	v = (V1 - V2) * 1.0
 	a = 1.0 * mA / 1000
 	r = v / a
+	r = round(r, 2)
 	return r
 
 def heiretsu(r_list) :
