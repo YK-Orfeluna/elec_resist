@@ -2,7 +2,6 @@
 
 import sys
 import Tkinter
-<<<<<<< HEAD
 
 w = 10
 
