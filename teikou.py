@@ -169,3 +169,4 @@ if __name__ == "__main__" :
 				exit()
 			else :
 				r_list.append(float(r))
+"""
