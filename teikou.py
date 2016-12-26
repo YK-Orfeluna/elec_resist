@@ -2,6 +2,7 @@
 
 import sys
 import Tkinter
+<<<<<<< HEAD
 
 w = 10
 
@@ -111,6 +112,33 @@ def chokuretsu(r_list) :
 	return s
 """
 if __name__ == "__main__" :
+
+	root = Tkinter.Tk()
+	root.title("elect")
+	root.geometry("400x300")
+
+	Val1 = Tkinter.BooleanVar()
+	Val2 = Tkinter.BooleanVar()
+	Val3 = Tkinter.BooleanVar()
+
+	Val1.set(False)
+	Val2.set(False)
+	Val3.set(False)
+
+	CheckBox1 = Tkinter.Checkbutton(text=u"項目1", variable=Val1)
+	CheckBox1.pack()
+
+	CheckBox2 = Tkinter.Checkbutton(text=u"項目2", variable=Val2)
+	CheckBox2.pack()
+
+	CheckBox3 = Tkinter.Checkbutton(text=u"項目3", variable=Val3)
+	CheckBox3.pack()
+
+
+	root.mainloop()
+	root2.mainloop()
+	exit()
+
 	flag = int(input("計算の種類を選んでください\n抵抗値の計算: 1，並列抵抗の計算: 2，直列抵抗の計算: 3\n>>>"))
 	r_list = []
 
@@ -142,4 +170,3 @@ if __name__ == "__main__" :
 				exit()
 			else :
 				r_list.append(float(r))
-"""
