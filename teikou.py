@@ -97,16 +97,9 @@ Button1.place(x=x4, y=y5)
 
 Button2 = Tkinter.Button(text="Exit")
 Button2.bind("<Button-1>",finish) 
-# <Button-1>: click
-# <Button-2>: wheel-click
-# <Button-3>: right-click
 Button2.place(x=x4, y=y5+30)
 
-
 root.mainloop()
-
-
-
 
 def heiretsu(r_list) :
 	s = 0.0
