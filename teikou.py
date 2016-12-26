@@ -25,15 +25,15 @@ def teikou(V1, V2, mA) :
 
 def run(event) :
 	global EditBox1, EditBox2, EditBox3, EditBox4
-	value1 = EditBox1.get()
-	value2 = EditBox2.get()
-	value3 = EditBox3.get()
-	value4 = EditBox4.get()
+	v1 = EditBox1.get()
+	v2 = EditBox2.get()
+	ma = EditBox3.get()
+	resist = EditBox4.get()
 
-	if value4 == "" :
-		if not value1 == value2 == value3 == "" :
-			value4 = teikou(float(value1), float(value2), float(value3))
-			EditBox4.insert(Tkinter.END,value4)
+	if resist == "" :
+		if not v1 == v2 == ma == "" :
+			resist = teikou(float(v1), float(v2), float(ma))
+			EditBox4.insert(Tkinter.END,resist)
 
 def finish(event) :
 	sys.exit("System exit")
